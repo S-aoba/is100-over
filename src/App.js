@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Binary, Decimal, HexaDecimal } from "./component/index";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-screen flex justify-center">
+      <div>
+        <div className="py-10 flex justify-center items-center">
+          <p className="px-10 font-mono text-4xl text-blue-500 border-b-2 border-blue-400">is100Over?</p>
+        </div>
+        <div className="flex justify-around">
+          <Decimal />
+          <Binary />
+          <HexaDecimal />
+        </div>
+      </div>
     </div>
   );
 }
